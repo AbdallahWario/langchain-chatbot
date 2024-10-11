@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to PDF Searchable Chatbot</h1>
+<div id="chat-container">
+    <div id="chat-messages"></div>
+    <div id="pagination-container"></div>
+    <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Ask a question...">
+        <button type="submit">Send</button>
+    </form>
+</div>
+<div id="pdf-upload">
+    <h2>Upload PDF</h2>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <input type="text" name="title" placeholder="PDF Title">
+        <input type="text" name="author" placeholder="Author">
+        <button type="submit">Upload</button>
+    </form>
+</div>
+<script src="/static/script.js"></script>
+
+{% endblock %}

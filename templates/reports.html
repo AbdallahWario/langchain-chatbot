@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Usage Reports</h1>
+<div class="report-container">
+    <div class="report-item">
+        <h2>Total Queries</h2>
+        <p>{{ total_queries }}</p>
+    </div>
+    <div class="report-item">
+        <h2>PDF Queries</h2>
+        <p>{{ pdf_queries }}</p>
+    </div>
+    <div class="report-item">
+        <h2>External Queries</h2>
+        <p>{{ external_queries }}</p>
+    </div>
+</div>
+{% endblock %}
